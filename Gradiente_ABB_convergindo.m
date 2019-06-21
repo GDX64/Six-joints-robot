@@ -8,12 +8,12 @@ height=1000;
 set(gcf,'units','points','position',[x0,y0,width,height])
 
 %coloque aqui o objetivo
-obj=[0 0 1 0 -1 0 1 0 0 3 -5 10.0000];
+obj=[0 0 1 0 -1 0 1 0 0 8 -5 7];
 %links
 L1=3.5;
 L2=10.5;
 L3=10;
-L4=0;
+L4=1;
 L5=2.1;
 
 if ~exist('Jf')
@@ -126,7 +126,7 @@ while E*E'>0.01;
 
     grid on
     hold off
-    pause(0.0001)
+    pause(0.001)
     
 
 end
